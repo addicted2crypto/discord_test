@@ -26,6 +26,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { FileUpload } from "../file-upload";
+import { ModeToggle } from "../mode-toggle";
 
 
 const formSchema = z.object({
@@ -85,7 +86,7 @@ export const InitialModal = () => {
                
                     <div className="space-y-8">
                         <div className="flex items-center justify-center text-center">
-                            Web3 Image Upload
+                             
                            <FormField 
                             control={form.control}
                             name="imageUrl"
@@ -104,7 +105,7 @@ export const InitialModal = () => {
                                     disabled={isLoading}
                                     className="bg-zinc-300/50 border-0 focus-visible:ring-0 
                                     text-black focus-visible:ring-offset-0"
-                                    placeholder="Type name here"
+                                    placeholder="Enter Name yoo"
                                     {...field}
                                     />
                                  </FormControl>
@@ -117,6 +118,7 @@ export const InitialModal = () => {
                             <Button variant="primary"disabled={isLoading}>
                                 Create Your Own Server
                             </Button>
+                            
                         </DialogFooter>
                     </div>
 

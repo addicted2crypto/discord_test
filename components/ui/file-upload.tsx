@@ -28,7 +28,6 @@ export const FileUpload = ({
         src={value}
         alt="Upload"
         className="rounded-full"
-        
         />
 
         </div>
