@@ -23,13 +23,9 @@ import { InitialModal } from "@/components/ui/modals/initial-modal";
                where: {
                 members: {
                     some: {
-                        profileId: profile.Id
+                        profileId: profile.id
                     }
-                
-                
-                 
                 } 
-                
             }
         });
 
