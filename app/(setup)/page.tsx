@@ -29,7 +29,7 @@ import { InitialModal } from "@/components/ui/modals/initial-modal";
             }
         });
 
-            if (server) {
+            if(server) {
                 return redirect(`/servers/${server.id}`);
             }
             return <InitialModal />

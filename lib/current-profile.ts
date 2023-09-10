@@ -1,6 +1,6 @@
 import { auth } from "@clerk/nextjs";
 
-import { db } from "../lib/db";
+import { db } from "@/lib/db";
 
 
 export const currentProfile = async () => {
@@ -13,6 +13,6 @@ export const currentProfile = async () => {
         where: {
             userId
         }
-    })
+    });
     return profile;
 }
