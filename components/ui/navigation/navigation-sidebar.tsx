@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 
+import * as React from 'react'
 
 import { currentProfile } from "@/lib/current-profile"
 import { db } from "@/lib/db";
